@@ -37,7 +37,7 @@ int encryptData(char *data, int dataLength)
         Before this you'll have to separate the 8 bits to 2 nibbles. This can be done with bit masking,
         bitwise AND and shifting. Then you can assemble the final result using bitwise OR.
         //*/
-        mov al, byte ptr[edi + ecx];    // move data address to al register
+        mov al, byte ptr[edi + ecx];            // move data address to al register
     LOOP_A1:
 		//lower 4 bits
         mov bl, al;		                        //bl has contents of al
